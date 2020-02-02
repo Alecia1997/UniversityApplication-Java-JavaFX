@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+
+<MenuBar xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml"
+         fx:controller="za.co.openwindow.university.controller.MenuBarController">
+    <Menu text="File">
+        <MenuItem text="New"/>
+        <MenuItem text="Load"/>
+        <MenuItem text="Save"/>
+        <SeparatorMenuItem/>
+        <MenuItem text="Exit"/>
+    </Menu>
+    <Menu text="Navigate">
+        <MenuItem text="Home" onAction="#goToHome"/>
+        <MenuItem text="Subjects" onAction="#goToSubjects"/>
+        <MenuItem text="Students" onAction="#goToStudents"/>
+        <MenuItem text="Staff" onAction="#goToStaff"/>
+    </Menu>
+</MenuBar>

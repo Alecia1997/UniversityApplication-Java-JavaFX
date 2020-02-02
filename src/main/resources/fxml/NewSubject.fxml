@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="za.co.openwindow.university.controller.NewSubjectController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <top>
+        <fx:include source="MenuBar.fxml" fx:id="menuBar"/>
+    </top>
+
+    <center>
+        <GridPane xmlns="http://javafx.com/javafx"
+                  xmlns:fx="http://javafx.com/fxml"
+                  prefHeight="400.0" prefWidth="600.0">
+
+            <columnConstraints>
+                <ColumnConstraints percentWidth="8.3"/>
+                <ColumnConstraints percentWidth="8.3"/>
+                <ColumnConstraints percentWidth="8.3"/>
+                <ColumnConstraints percentWidth="8.3"/>
+                <ColumnConstraints percentWidth="8.3"/>
+                <ColumnConstraints percentWidth="8.3"/>
+                <ColumnConstraints percentWidth="8.3"/>
+                <ColumnConstraints percentWidth="8.3"/>
+                <ColumnConstraints percentWidth="8.3"/>
+                <ColumnConstraints percentWidth="8.3"/>
+                <ColumnConstraints percentWidth="8.3"/>
+                <ColumnConstraints percentWidth="8.3"/>
+            </columnConstraints>
+
+            <rowConstraints>
+                <RowConstraints percentHeight="8.3"/>
+                <RowConstraints percentHeight="8.3"/>
+                <RowConstraints percentHeight="8.3"/>
+                <RowConstraints percentHeight="8.3"/>
+                <RowConstraints percentHeight="8.3"/>
+                <RowConstraints percentHeight="8.3"/>
+                <RowConstraints percentHeight="8.3"/>
+                <RowConstraints percentHeight="8.3"/>
+                <RowConstraints percentHeight="8.3"/>
+                <RowConstraints percentHeight="8.3"/>
+                <RowConstraints percentHeight="8.3"/>
+                <RowConstraints percentHeight="8.3"/>
+            </rowConstraints>
+
+            <Label GridPane.columnIndex="0"
+                   GridPane.columnSpan="6"
+                   GridPane.rowIndex="0"
+                   GridPane.rowSpan="1"
+            >
+                Subject Name:
+            </Label>
+            <TextField fx:id="subjectTextField"
+                       GridPane.columnIndex="6"
+                       GridPane.columnSpan="6"
+                       GridPane.rowIndex="0"
+                       GridPane.rowSpan="1"
+            >
+
+            </TextField>
+            <Label GridPane.columnIndex="0"
+                   GridPane.columnSpan="6"
+                   GridPane.rowIndex="1"
+                   GridPane.rowSpan="1"
+            >
+                Code:
+            </Label>
+            <TextField fx:id="subjectTextField2"
+                       GridPane.columnIndex="6"
+                       GridPane.columnSpan="6"
+                       GridPane.rowIndex="1"
+                       GridPane.rowSpan="1"
+            >
+
+            </TextField>
+            <Label GridPane.columnIndex="0"
+                   GridPane.columnSpan="6"
+                   GridPane.rowIndex="2"
+                   GridPane.rowSpan="1"
+            >
+                Lecturer:
+            </Label>
+            <TextField fx:id="subjectTextField3"
+                       GridPane.columnIndex="6"
+                       GridPane.columnSpan="6"
+                       GridPane.rowIndex="2"
+                       GridPane.rowSpan="1"
+            >
+
+            </TextField>
+            <Label GridPane.columnIndex="0"
+                   GridPane.columnSpan="6"
+                   GridPane.rowIndex="3"
+                   GridPane.rowSpan="1"
+            >
+                Credits:
+            </Label>
+            <TextField fx:id="subjectTextField4"
+                       GridPane.columnIndex="6"
+                       GridPane.columnSpan="6"
+                       GridPane.rowIndex="3"
+                       GridPane.rowSpan="1"
+            >
+
+            </TextField>
+            <Label GridPane.columnIndex="0"
+                   GridPane.columnSpan="6"
+                   GridPane.rowIndex="4"
+                   GridPane.rowSpan="1"
+            >
+                Hours per week:
+            </Label>
+            <TextField fx:id="subjectTextField5"
+                       GridPane.columnIndex="6"
+                       GridPane.columnSpan="6"
+                       GridPane.rowIndex="4"
+                       GridPane.rowSpan="1"
+            >
+
+            </TextField>
+            <Label GridPane.columnIndex="0"
+                   GridPane.columnSpan="6"
+                   GridPane.rowIndex="5"
+                   GridPane.rowSpan="1"
+            >
+                Price per month:
+            </Label>
+            <TextField fx:id="subjectTextField6"
+                       GridPane.columnIndex="6"
+                       GridPane.columnSpan="6"
+                       GridPane.rowIndex="5"
+                       GridPane.rowSpan="1"
+            >
+
+            </TextField>
+
+
+
+            <Label GridPane.columnIndex="0"
+                   GridPane.columnSpan="12"
+                   GridPane.rowIndex="6"
+                   GridPane.rowSpan="1"
+            >
+                Students:
+            </Label>
+            <VBox fx:id="collectionVBox"
+                  prefWidth="Infinity"
+                  prefHeight="Infinity"
+                  GridPane.columnIndex="0"
+                  GridPane.columnSpan="12"
+                  GridPane.rowIndex="7"
+                  GridPane.rowSpan="8"
+            >
+            </VBox>
+
+
+
+
+
+            <Button fx:id="doneButton"
+                    prefWidth="Infinity"
+                    GridPane.columnIndex="8"
+                    GridPane.columnSpan="4"
+                    GridPane.rowIndex="11"
+                    GridPane.rowSpan="1"
+                    onAction="#done"
+            >
+                Done
+            </Button>
+
+
+        </GridPane>
+
+    </center>
+
+</BorderPane>
